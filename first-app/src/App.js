@@ -31,7 +31,6 @@ const App = () => {
     return (
         <div className="app">
             <h1>MovieLand</h1>
-
             <div className="search">
                 <input
                     placeholder="Search for movies"
@@ -44,7 +43,6 @@ const App = () => {
                     onClick={() => searchMovies(searchTerm)}
                 />
             </div>
-
             {movies?.length > 0
                 ? (
                     <div className='container'>
@@ -56,7 +54,6 @@ const App = () => {
                     <div className="empty">
                         <h2>No movies Found</h2>
                     </div>
-
                 )}
         </div>
     );
